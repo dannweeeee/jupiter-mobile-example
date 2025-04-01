@@ -17,7 +17,7 @@ type Props = {
 export const SolanaWalletProvider: FC<Props> = ({ children }) => {
   const rpcUrl = process.env.NEXT_PUBLIC_RPC_URL;
 
-  const { reownAdapter, jupiterAdapter } = useWrappedReownAdapter({
+  const { jupiterAdapter } = useWrappedReownAdapter({
     appKitOptions: {
       metadata: {
         name: "Jupiter Mobile Adapter Example",
